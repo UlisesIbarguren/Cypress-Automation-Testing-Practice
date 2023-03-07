@@ -1,0 +1,44 @@
+{
+    "United States": {
+        "country": "United States",
+        "zone": "California"
+    },
+    "Argentina": {
+        "country": "Argentina",
+        "zone": "Buenos Aires"
+    },
+    "Germany": {
+      "country": "Germany",
+      "zone": "Berlin"
+    },
+    "United Kingdom": {
+        "country": "United Kingdom",
+        "zone": "Lancashire"
+    },
+    "Japan": {
+        "country": "Japan",
+        "zone": "Tokyo"
+    },
+    "South Korea": {
+        "country": "South Korea",
+        "zone": "Cheju-do"
+    },
+    "France": {
+        "country": "France, Metropolitan",
+        "zone": "Paris"
+    },
+    "Canadana": {
+        "country": "Canada",
+        "zone": "Ontario"
+    },
+    "Australia": {
+        "country": "Australia",
+        "zone": "Queensland"
+    },
+    "Russia": {
+        "country": "Russian Federation",
+        "zone": "Moscow"
+    }
+    
+  }
+  
