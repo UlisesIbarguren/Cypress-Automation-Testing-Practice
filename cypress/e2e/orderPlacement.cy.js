@@ -35,4 +35,9 @@ describe('Places an order for ten different countries', () => {
       cy.get('.page-title').should('have.text', ' Your order has been placed!');
     });
   });
+
+  afterEach(() => {
+    cy.clearCookies();
+    cy.clearLocalStorage();
+  });
 });
