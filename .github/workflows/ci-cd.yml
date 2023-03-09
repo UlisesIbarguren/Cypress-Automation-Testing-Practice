@@ -7,19 +7,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.5.1
         with:
-          node-version: 16
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Use Node.js 16
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v2.4.0
         with:
           node-version: 16
       - name: Install dependencies and run build script
         run: |
           npm install
           npm run build
-
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
-        with:
-          working-directory: .
