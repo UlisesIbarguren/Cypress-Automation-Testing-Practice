@@ -7,16 +7,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.7.4
+      - uses: actions/checkout@v2.11.2
         with:
-          ref: main # Replace 'main' with your branch name if it's different
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
+          ref: main
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2.4.0
         with:
-          node-version: 16.x
-      - name: Install Dependencies
-        run: npm install
-      - name: Verify Cypress Installation
-        run: npx cypress verify
-      - name: Run Cypress Tests
-        run: npx cypress run
+          node-version: 16
+      - name: Install dependencies and run build script
+        run: |
+          npm install
+          npm run build
+      - name: Run tests
+        run: npm test
