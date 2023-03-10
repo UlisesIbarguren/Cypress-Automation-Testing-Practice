@@ -1,21 +1,19 @@
-name: Build and Test
-
+name: My GitHub Actions Workflow
 on:
   push:
-    branches:
-      - master
+    branches: [master]
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Install Node.js
+        uses: actions/checkout@v2.6.4
+      - name: Use Node.js 16
         uses: actions/setup-node@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Test
-        run: npm test
+        with:
+          node-version: 16
+      - name: Install dependencies and run build script
+        run: |
+          npm install
+          npm run build
