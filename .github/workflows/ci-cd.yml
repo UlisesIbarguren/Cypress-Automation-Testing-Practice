@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.11.2
+      - uses: actions/checkout@v2.7.4
         with:
           ref: main
       - name: Use Node.js 16
