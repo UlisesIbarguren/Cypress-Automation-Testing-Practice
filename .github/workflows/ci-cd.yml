@@ -11,7 +11,7 @@ jobs:
         run: git --version
       - uses: actions/checkout@v3.3.0
         with:
-          ref: main
+          ref: master
         # add the GIT_STRATEGY variable here
         env:
           GIT_STRATEGY: clone
