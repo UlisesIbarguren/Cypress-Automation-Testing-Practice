@@ -20,8 +20,7 @@ jobs:
         with:
           node-version: 16
       - name: Install dependencies and run build script
-      - run: 
-          npm install
-          npm run build
+      - run: npm install
+      - run: npm run build
       - name: Run tests
       - run: npm test
