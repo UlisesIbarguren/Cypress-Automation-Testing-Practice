@@ -4,7 +4,10 @@
   "description": "",
   "main": "cypress.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "build": "npm install && npm run cy:verify && npm run cy:run",
+    "cy:verify": "cypress verify",
+    "cy:run": "cypress run"
   },
   "author": "Ulises",
   "license": "ISC",
@@ -14,3 +17,4 @@
     "neat-csv": "^5.2.0"
   }
 }
+
