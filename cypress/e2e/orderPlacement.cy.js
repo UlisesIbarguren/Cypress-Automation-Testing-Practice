@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 
 import EcommercePage from '../pageObjects/ecommerce'
 import data from '../fixtures/paymentData.json'
