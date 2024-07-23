@@ -7,7 +7,7 @@ describe('Registration', () => {
     const userData = {
       firstName: 'Test',
       lastName: username,
-      email: `${username}@example.com`,
+      email: `${username}@yopmail.com`,
       telephone: '4444-6666',
       password: 'Password123'
     };

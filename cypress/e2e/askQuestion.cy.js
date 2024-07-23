@@ -7,6 +7,6 @@ describe('template spec', () => {
     cy.visit(baseUrl);
     ecommercePage.searchProduct('MacBook Pro');
     ecommercePage.selectProduct()
-    ecommercePage.askQuestion()
+    ecommercePage.askQuestion('John Doe', 'john.doe@example.com', 'Product Inquiry', 'I would like to know more about the product.')
   })
 })
